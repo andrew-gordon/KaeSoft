@@ -1,11 +1,8 @@
 using System;
-using Andy.Lib.Interfaces;
-using Andy.Lib.Properties;
+using KaeSoft.Core.Interfaces;
 
-namespace Andy.Lib.Classes
+namespace KaeSoft.Core.Classes
 {
-    [UsedImplicitly]
-// ReSharper disable once ClassNeverInstantiated.Global
     public class DateTimeProvider : IDateTimeProvider
     {
         public DateTime UtcNow

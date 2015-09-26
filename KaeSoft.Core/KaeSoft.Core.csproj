@@ -7,8 +7,8 @@
     <ProjectGuid>{C741B31D-B850-4121-A0B3-1C2AA6C5366A}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Andy.Lib</RootNamespace>
-    <AssemblyName>Andy.Lib</AssemblyName>
+    <RootNamespace>KaeSoft.Core</RootNamespace>
+    <AssemblyName>KaeSoft.Core</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

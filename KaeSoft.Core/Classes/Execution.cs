@@ -2,11 +2,13 @@
 using System.Diagnostics;
 using System.Diagnostics.CodeAnalysis;
 using System.Threading;
+using KaeSoft.Core.Properties;
 using log4net;
 
-namespace Andy.Lib.Classes
+namespace KaeSoft.Core.Classes
 {
     [ExcludeFromCodeCoverage]
+    [UsedImplicitly]
     public static class Execution
     {
         private static readonly ILog Log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);

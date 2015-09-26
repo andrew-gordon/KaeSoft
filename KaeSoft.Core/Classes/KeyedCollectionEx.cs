@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.ObjectModel;
 
-namespace Andy.Lib.Classes
+namespace KaeSoft.Core.Classes
 {
     public class KeyedCollectionEx<TKey, TItem> : KeyedCollection<TKey, TItem> 
 

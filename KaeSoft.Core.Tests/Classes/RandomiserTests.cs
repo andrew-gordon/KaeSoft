@@ -1,10 +1,10 @@
 ﻿using System;
-using NUnit.Framework;
 using System.Collections.Generic;
 using System.Linq;
-using Andy.Lib.Classes;
+using KaeSoft.Core.Classes;
+using NUnit.Framework;
 
-namespace Andy.Lib.Tests.Classes
+namespace KaeSoft.Core.Tests.Classes
 {
     [TestFixture]
     public class RandomiserTests

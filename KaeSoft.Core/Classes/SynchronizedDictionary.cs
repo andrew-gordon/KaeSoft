@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Andy.Lib.Classes
+namespace KaeSoft.Core.Classes
 {
     public class SynchronizedDictionary<TKey, TValue>
     {

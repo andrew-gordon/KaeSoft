@@ -7,8 +7,8 @@
     <ProjectGuid>{2421CBE9-13BE-460A-91E0-AD1FF6CF3C1A}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Andy.Lib.Tests</RootNamespace>
-    <AssemblyName>Andy.Lib.Tests</AssemblyName>
+    <RootNamespace>KaeSoft.Core.Tests</RootNamespace>
+    <AssemblyName>KaeSoft.Core.Tests</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

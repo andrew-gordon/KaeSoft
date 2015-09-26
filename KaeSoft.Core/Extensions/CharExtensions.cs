@@ -1,6 +1,6 @@
 ﻿using System.Globalization;
 
-namespace Andy.Lib.Extensions
+namespace KaeSoft.Core.Extensions
 {
     public static class CharExtensions
     {

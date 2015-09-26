@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using Andy.Lib.Extensions;
+using KaeSoft.Core.Extensions;
 using NUnit.Framework;
 
-namespace Andy.Lib.Tests.Extensions
+namespace KaeSoft.Core.Tests.Extensions
 {
     [TestFixture]
     public class EnumerableExtensionsTests

@@ -1,9 +1,9 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using Andy.Lib.Classes;
+using KaeSoft.Core.Classes;
 
-namespace Andy.Lib.Extensions
+namespace KaeSoft.Core.Extensions
 {
     public static class EnumerableExtensions
     {

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Diagnostics;
 
-namespace Andy.Lib.Extensions
+namespace KaeSoft.Core.Extensions
 {
     public static class ConsoleExt
     {

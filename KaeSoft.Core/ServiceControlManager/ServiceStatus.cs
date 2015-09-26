@@ -1,6 +1,6 @@
 ﻿using System.Runtime.InteropServices;
 
-namespace Andy.Lib.ServiceControlManager
+namespace KaeSoft.Core.ServiceControlManager
 {
     [StructLayout(LayoutKind.Sequential)]
     public struct ServiceStatus

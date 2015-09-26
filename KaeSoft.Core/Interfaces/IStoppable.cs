@@ -1,4 +1,4 @@
-namespace Andy.Lib.Interfaces
+namespace KaeSoft.Core.Interfaces
 {
     public interface IStoppable
     {

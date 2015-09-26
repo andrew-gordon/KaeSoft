@@ -1,11 +1,11 @@
 ﻿using System;
 using System.Net.Sockets;
 
-namespace Andy.Lib.Classes
+namespace KaeSoft.Core.Classes
 {
     public static class SocketTester
     {
-        public static bool ConnectTest(string address, int port, TimeSpan timeout, ProtocolType protocolType = ProtocolType.Tcp)
+        public static bool ConnectTest(string host, int port, TimeSpan timeout, ProtocolType protocolType = ProtocolType.Tcp)
         {
             try
             {
@@ -14,7 +14,7 @@ namespace Andy.Lib.Classes
                 {
                     try
                     {
-                        var asyncResult = socket.BeginConnect(address, port, null, null);
+                        var asyncResult = socket.BeginConnect(host, port, null, null);
                         result = asyncResult.AsyncWaitHandle.WaitOne(timeout, true);
                         socket.Close();
                     }

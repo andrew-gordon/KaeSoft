@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Runtime.Serialization;
 
-namespace Andy.Lib.Data
+namespace KaeSoft.Core.Data
 {
     [DataContract]
     public class Range<T> : IEquatable<Range<T>> where T : IComparable<T>

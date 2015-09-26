@@ -4,7 +4,7 @@ using System.Globalization;
 using System.Linq;
 using System.Text.RegularExpressions;
 
-namespace Andy.Lib.Extensions
+namespace KaeSoft.Core.Extensions
 {
     public static class StringExtensions
     {

@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Threading;
-using Andy.Lib.Interfaces;
+using KaeSoft.Core.Interfaces;
 
-namespace Andy.Lib.Services
+namespace KaeSoft.Core.Services
 {
     public abstract class SubServiceBase : IStartable, IStoppable
     {

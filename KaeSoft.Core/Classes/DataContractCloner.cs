@@ -2,7 +2,7 @@
 using System.IO;
 using System.Runtime.Serialization;
 
-namespace Andy.Lib.Classes
+namespace KaeSoft.Core.Classes
 {
     public static class DataContractCloner
     {

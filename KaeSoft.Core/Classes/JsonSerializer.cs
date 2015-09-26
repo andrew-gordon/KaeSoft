@@ -2,7 +2,7 @@
 using System.Runtime.Serialization.Json;
 using System.Text;
 
-namespace Andy.Lib.Classes
+namespace KaeSoft.Core.Classes
 {
     /// <summary>
     /// Serializes or deserializes a json result.

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Security.Cryptography;
 
-namespace Andy.Lib.Classes
+namespace KaeSoft.Core.Classes
 {
     public class Randomiser 
     {

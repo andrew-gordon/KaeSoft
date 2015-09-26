@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 
-namespace Andy.Lib.Extensions
+namespace KaeSoft.Core.Extensions
 {
     public static class ListExtensions
     {

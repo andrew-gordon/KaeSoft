@@ -1,6 +1,6 @@
 using System;
 
-namespace Andy.Lib.Interfaces
+namespace KaeSoft.Core.Interfaces
 {
     public interface IDateTimeProvider
     {

@@ -1,7 +1,7 @@
 ﻿using System;
-using Andy.Lib.Classes;
+using KaeSoft.Core.Classes;
 
-namespace Andy.Lib.Extensions
+namespace KaeSoft.Core.Extensions
 {
     public static class FuncExtensions
     {

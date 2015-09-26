@@ -1,7 +1,7 @@
-﻿using Andy.Lib.Extensions;
+﻿using KaeSoft.Core.Extensions;
 using NUnit.Framework;
 
-namespace Andy.Lib.Tests.Extensions
+namespace KaeSoft.Core.Tests.Extensions
 {
     [TestFixture]
     public class CharExtensionsTests

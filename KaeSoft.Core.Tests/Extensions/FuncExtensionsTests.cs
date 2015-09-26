@@ -1,11 +1,11 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Numerics;
 using System.Threading.Tasks;
-using Andy.Lib.Extensions;
+using KaeSoft.Core.Extensions;
 using NUnit.Framework;
-using System.Collections.Generic;
 
-namespace Andy.Lib.Tests.Extensions
+namespace KaeSoft.Core.Tests.Extensions
 {
     [TestFixture]
     public class FuncExtensionsTests

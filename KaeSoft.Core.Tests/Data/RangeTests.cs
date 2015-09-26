@@ -1,8 +1,8 @@
 ﻿using System;
-using Andy.Lib.Data;
+using KaeSoft.Core.Data;
 using NUnit.Framework;
 
-namespace Andy.Lib.Tests.Data
+namespace KaeSoft.Core.Tests.Data
 {
     [TestFixture]
     public class RangeTests

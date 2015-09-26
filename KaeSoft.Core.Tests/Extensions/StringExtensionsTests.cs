@@ -1,9 +1,9 @@
 ﻿using System;
-using Andy.Lib.Extensions;
-using NUnit.Framework;
 using System.Collections.Generic;
+using KaeSoft.Core.Extensions;
+using NUnit.Framework;
 
-namespace Andy.Lib.Tests.Extensions
+namespace KaeSoft.Core.Tests.Extensions
 {
     [TestFixture]
     public class StringExtensionsTests

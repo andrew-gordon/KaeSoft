@@ -1,4 +1,4 @@
-﻿namespace Andy.Lib.ServiceControlManager
+﻿namespace KaeSoft.Core.ServiceControlManager
 {
     public enum ServiceState
     {

@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Diagnostics.CodeAnalysis;
-using Andy.Lib.Interfaces;
-using Andy.Lib.Properties;
+using KaeSoft.Core.Interfaces;
+using KaeSoft.Core.Properties;
 using log4net;
 
-namespace Andy.Lib.Services
+namespace KaeSoft.Core.Services
 {
     [ExcludeFromCodeCoverage, UsedImplicitly]
     public class LoggingService : ILoggingService
