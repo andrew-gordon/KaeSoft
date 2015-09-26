@@ -3,6 +3,11 @@ using System.Collections.Generic;
 
 namespace KaeSoft.Core.Classes
 {
+    /// <summary>
+    /// A synchronized dictionary.
+    /// </summary>
+    /// <typeparam name="TKey">Key type</typeparam>
+    /// <typeparam name="TValue">Value type</typeparam>
     public class SynchronizedDictionary<TKey, TValue>
     {
         private readonly IDictionary<TKey, TValue> _dictionary;
@@ -12,6 +17,12 @@ namespace KaeSoft.Core.Classes
             _dictionary = new Dictionary<TKey, TValue>();
         }
 
+        /// <summary>
+        /// Gets or addsa value
+        /// </summary>
+        /// <param name="key">Key</param>
+        /// <param name="valueFactory">Value factory</param>
+        /// <returns></returns>
         public TValue GetOrAdd(TKey key, Func<TKey, TValue> valueFactory)
         {
             TValue value;

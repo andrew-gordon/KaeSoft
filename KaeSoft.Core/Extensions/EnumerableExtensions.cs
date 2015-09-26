@@ -13,7 +13,7 @@ namespace KaeSoft.Core.Extensions
                 throw new ArgumentNullException("enumerable");
 
             var randomiser = new Randomiser();
-            var randomValue = randomiser.GetRandomValueFromList(enumerable);
+            var randomValue = randomiser.GetRandomValue(enumerable);
             return randomValue;
         }
 

@@ -24,7 +24,7 @@ namespace KaeSoft.Core.Classes
         }
 
         /// <summary>
-        /// Get a random number between minimumValue and maximumValue(inclusive)
+        /// Generates a random integer between minimumValue and maximumValue(inclusive)
         /// </summary>
         /// <param name="minimumValue">Minimum value</param>
         /// <param name="maximumValue">Maximum value</param>
@@ -35,14 +35,25 @@ namespace KaeSoft.Core.Classes
             return number;
         }
 
+        /// <summary>
+        /// Generates a random double between minimumValue and maximumValue(inclusive)
+        /// </summary>
+        /// <param name="minimumValue">Minimum value</param>
+        /// <param name="maximumValue">Maximum value</param>
+        /// <returns>Random number greater or equal to minimumValue and less than or equal to maximumValue</returns>
         public double GenerateDouble(double minimumValue, double maximumValue)
         {
             return LazyRandom.Value.NextDouble() * (maximumValue - minimumValue) + minimumValue;
         }
 
-        public T GetRandomValueFromList<T>(IEnumerable<T> possibleValues)
+        /// <summary>
+        /// Gets a random value from a values of values
+        /// </summary>
+        /// <param name="values">List of values from which the value should be randomly selected</param>
+        /// <returns>Random value from the values</returns>
+        public T GetRandomValue<T>(IEnumerable<T> values)
         {
-            var list = possibleValues.ToList();
+            var list = values.ToList();
             var count = list.Count;
             var randomNumber = GenerateInteger(0, count - 1);
             var randomItem = list[randomNumber];
