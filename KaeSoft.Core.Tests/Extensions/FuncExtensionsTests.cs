@@ -57,7 +57,7 @@ namespace KaeSoft.Core.Tests.Extensions
         [Test]
         public void Test_Fibonnaci_With_Concurrency()
         {
-            for (int a = 1; a < 100; a++)
+            for (var a = 1; a < 100; a++)
             {
                 Func<int, BigInteger> fasterFibonnaci = n =>
                 {

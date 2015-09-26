@@ -2,6 +2,8 @@
 
 namespace KaeSoft.Core.Interfaces
 {
+    // NB: Violates SRP...
+
     public interface ILoggingService
     {
         void Debug(string text);
