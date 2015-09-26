@@ -1,0 +1,7 @@
+packages
+/KaeSoft.Core/bin
+/KaeSoft.Core/obj
+/KaeSoft.Core/*.DotSettings
+bin
+obj
+*.suo
