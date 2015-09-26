@@ -1,6 +1,4 @@
-﻿using MiscUtil.Conversion;
-
-namespace Kae.Networking.Converters
+﻿namespace Kae.Networking.Converters
 {
     /// <summary>
     /// Implementation of EndianBitConverter which converts to/from big-endian

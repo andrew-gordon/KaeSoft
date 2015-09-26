@@ -1,7 +1,7 @@
 using System;
 using System.Globalization;
 
-namespace MiscUtil.Conversion
+namespace Kae.Networking.Converters
 {
 	/// <summary>
 	/// A class to allow the conversion of doubles to string representations of

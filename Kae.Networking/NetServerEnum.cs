@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Runtime.InteropServices;
-using Kae.Network.Management;
 using Kae.Networking.Interop;
 
 namespace Kae.Networking
@@ -29,30 +28,29 @@ namespace Kae.Networking
         /// </summary>
         /// <param name="serverType">Server type filter</param>
         /// <param name="domain">The domain in which to search for computers</param>
-        public static IEnumerable<SERVER_INFO_101> Find(SV_101_TYPES serverType, string netBiosDomainName)
+        public static IEnumerable<SERVER_INFO_101> Find(SV_101_TYPES serverType, string domain)
         {
-            int entriesRead = 0;
-            int totalEntries = 0;
+            var entriesRead = 0;
+            var totalEntries = 0;
 
             do
             {
-                IntPtr buffer = new IntPtr();
-                SERVER_INFO_101 server;
+                IntPtr buffer;
 
                 // http://msdn.microsoft.com/en-us/library/aa370623%28VS.85%29.aspx
 
-                int ret = UnsafeNativeMethods.NetServerEnum(null, 101, out buffer, -1,
-                    ref entriesRead, ref totalEntries, serverType, netBiosDomainName, IntPtr.Zero);
+                var ret = UnsafeNativeMethods.NetServerEnum(null, 101, out buffer, -1,
+                    ref entriesRead, ref totalEntries, serverType, domain, IntPtr.Zero);
 
                 // if NetServerEnum returned any data....
                 if (ret == ERROR_SUCCESS || ret == ERROR_MORE_DATA || entriesRead > 0)
                 {
-                    IntPtr ptr = buffer;
+                    var ptr = buffer;
 
-                    for (int i = 0; i < entriesRead; i++)
+                    for (var i = 0; i < entriesRead; i++)
                     {
                         // cast pointer to a SERVER_INFO_101 structure
-                        server = (SERVER_INFO_101)Marshal.PtrToStructure(ptr, typeof(SERVER_INFO_101));
+                        var server = (SERVER_INFO_101)Marshal.PtrToStructure(ptr, typeof(SERVER_INFO_101));
 
                         //Cast the pointer to a ulong so this addition will work on 32-bit or 64-bit systems.
                         ptr = (IntPtr)((ulong)ptr + (ulong)Marshal.SizeOf(typeof(SERVER_INFO_101)));
@@ -87,7 +85,7 @@ namespace Kae.Networking
                 ref int totalentries,
                 SV_101_TYPES servertype,
                 [MarshalAs(UnmanagedType.LPWStr)]string domain,
-                IntPtr resume_handle);
+                IntPtr resumeHandle);
 
             #endregion Methods
 

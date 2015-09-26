@@ -1,4 +1,4 @@
-﻿namespace Kae.Networking
+﻿namespace Kae.Networking.Converters
 {
     /// <summary>
     /// Endianness of a converter
