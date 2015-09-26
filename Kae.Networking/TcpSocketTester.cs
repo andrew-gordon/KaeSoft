@@ -1,11 +1,12 @@
 ﻿using System;
 using System.Net.Sockets;
 
-namespace KaeSoft.Core.Classes
+namespace Kae.Networking
 {
     public static class SocketTester
     {
-        public static bool ConnectTest(string host, int port, TimeSpan timeout, ProtocolType protocolType = ProtocolType.Tcp)
+        public static bool ConnectTest(string host, int port, TimeSpan timeout,
+            ProtocolType protocolType = ProtocolType.Tcp)
         {
             try
             {

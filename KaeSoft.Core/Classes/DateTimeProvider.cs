@@ -1,4 +1,6 @@
 using System;
+using System.Configuration;
+using KaeSoft.Core.Extensions;
 using KaeSoft.Core.Interfaces;
 
 namespace KaeSoft.Core.Classes
@@ -10,4 +12,5 @@ namespace KaeSoft.Core.Classes
             get { return DateTime.UtcNow; }
         }
     }
+
 }
